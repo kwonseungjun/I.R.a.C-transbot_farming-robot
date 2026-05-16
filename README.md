@@ -10,6 +10,7 @@ Entire sytem was controlled in Jetson Nano Dev-board.
 This project researched in 2025 [summer], and published on papers at same year.
 
 If you have some misunderstanding part, then you can send a mail to me.
+
 mail address : "kwonsj75@icloud.com"
 
 Copyright ⓒ 2025. Seungjun Kwon All project cannot be copied without permission
