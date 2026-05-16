@@ -11,6 +11,8 @@ This project researched in 2025 [summer], and published on papers at same year.
 
 If you have some misunderstanding part, then you can send a mail to me.
 
-mail address : "kwonsj75@icloud.com"
+1. Mail address : "kwonsj75@icloud.com"
+2. Mail address : "anchan503@naver.com"
+3. Mail address : "pharao7651@gmail.com"
 
 Copyright ⓒ 2025. Seungjun Kwon All project cannot be copied without permission
