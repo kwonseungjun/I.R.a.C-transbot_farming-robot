@@ -1,0 +1,2 @@
+laser_geometry:laserscan_to_point_publish:robot_pose_publisher:yahboom_app_save_map:yahboom_web_savemap_interfaces
+-DCATKIN_DEVEL_PREFIX=/home/jetson/software/laser_app/devel -DCMAKE_INSTALL_PREFIX=/home/jetson/software/laser_app/install -G Unix Makefiles

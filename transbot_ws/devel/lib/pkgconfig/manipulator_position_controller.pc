@@ -1,0 +1,8 @@
+prefix=/home/jetson/transbot_ws/devel
+
+Name: manipulator_position_controller
+Description: Description of manipulator_position_controller
+Version: 0.2.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

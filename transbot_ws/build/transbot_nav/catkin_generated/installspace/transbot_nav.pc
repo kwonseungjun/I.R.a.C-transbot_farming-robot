@@ -1,0 +1,8 @@
+prefix=/home/jetson/transbot_ws/install
+
+Name: transbot_nav
+Description: Description of transbot_nav
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

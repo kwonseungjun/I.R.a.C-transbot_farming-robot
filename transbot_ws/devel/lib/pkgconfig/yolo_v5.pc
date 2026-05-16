@@ -1,0 +1,8 @@
+prefix=/home/jetson/transbot_ws/devel
+
+Name: yolo_v5
+Description: Description of yolo_v5
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/jetson/transbot_ws/install
+
+Name: open_manipulator_p_master_slave
+Description: Description of open_manipulator_p_master_slave
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp robotis_manipulator open_manipulator_libs open_manipulator_msgs

@@ -1,0 +1,8 @@
+prefix=/home/jetson/transbot_ws/install
+
+Name: transbot_astra
+Description: Description of transbot_astra
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rosmsg rospy

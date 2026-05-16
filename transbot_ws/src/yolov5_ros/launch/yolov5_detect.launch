@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="yolov5_ros" type="yolo_depth_tensorrt.py" name="yolov5_node" output="screen">
+    </node>
+</launch>
+

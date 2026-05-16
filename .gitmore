@@ -1,0 +1,12 @@
+# 빌드 폴더 및 로그 제외
+build/
+install/
+log/
+.catkin_workspace
+
+# 대용량 바이너리 및 압축 파일 제외
+*.so
+*.a
+*.o
+*.zip
+*.tar.gz

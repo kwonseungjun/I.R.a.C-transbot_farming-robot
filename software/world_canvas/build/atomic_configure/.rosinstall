@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jetson/software/world_canvas/devel/setup.sh

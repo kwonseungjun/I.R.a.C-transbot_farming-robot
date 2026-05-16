@@ -1,0 +1,8 @@
+prefix=/home/jetson/software/laser_app/install
+
+Name: yahboom_app_save_map
+Description: Description of yahboom_app_save_map
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

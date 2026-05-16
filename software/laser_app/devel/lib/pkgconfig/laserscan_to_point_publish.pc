@@ -1,0 +1,8 @@
+prefix=/home/jetson/software/laser_app/devel
+
+Name: laserscan_to_point_publish
+Description: Description of laserscan_to_point_publish
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

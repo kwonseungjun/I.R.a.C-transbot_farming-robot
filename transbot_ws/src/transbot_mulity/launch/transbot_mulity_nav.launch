@@ -1,0 +1,27 @@
+<launch>
+    <arg name="namespace" default="robot1" />
+    <!-- 是否打开rviz Whether to open rviz-->
+    <arg name="open_rviz" default="false"/>
+    <!-- 地图名 Map name-->
+    <arg name="map" default="my_apm"/>
+    <!-- 加载地图 Load map-->
+    <!--node name="map_server" pkg="map_server" type="map_server" args="$(find transbot_nav)/maps/$(arg map).yaml"/-->
+    <include file="$(find transbot_mulity)/launch/library/amcl_multi.launch">
+        <arg name="namespace" value="$(arg namespace)" />
+    </include>
+
+    <!--include file="$(find transbot_nav)/launch/library/app.launch"/-->
+
+    <include file="$(find transbot_mulity)/launch/library/move_base_multi.launch">
+        <arg name="namespace" value="$(arg namespace)" />
+    </include>
+
+    <!--group if="$(arg open_rviz)">
+        <include file="$(find transbot_nav)/launch/view/view_navigate.launch"/>
+    </group-->
+    <!-- MarkerArray node> -->
+    <group ns="$(arg namespace)">
+        <node name='send_mark' pkg="transbot_mulity" type="send_mark_mulity.py"/>
+    </group>
+</launch>
+

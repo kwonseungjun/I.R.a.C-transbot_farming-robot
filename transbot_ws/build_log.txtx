@@ -1,0 +1,21 @@
+[  0%] Built target _dynamixel_workbench_msgs_generate_messages_check_deps_MXExt
+[  0%] Built target _dynamixel_workbench_msgs_generate_messages_check_deps_PROExt
+[  0%] Built target _dynamixel_workbench_msgs_generate_messages_check_deps_XL320
+[  0%] Built target _dynamixel_workbench_msgs_generate_messages_check_deps_PRO
+[  0%] Built target _dynamixel_workbench_msgs_generate_messages_check_deps_XMExt
+[  0%] Built target _dynamixel_workbench_msgs_generate_messages_check_deps_XH
+Base path: /home/jetson/transbot_ws
+Source space: /home/jetson/transbot_ws/src
+Build space: /home/jetson/transbot_ws/build
+Devel space: /home/jetson/transbot_ws/devel
+Install space: /home/jetson/transbot_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/jetson/transbot_ws/build"
+####
+####
+#### Running command: "make -j4 -l4" in "/home/jetson/transbot_ws/build"
+####
+CMakeFiles/Makefile2:803: recipe for target 'dynamixel-workbench-msgs/dynamixel_workbench_msgs/CMakeFiles/_dynamixel_workbench_msgs_generate_messages_check_deps_MX2.dir/all' failed
+CMakeFiles/Makefile2:899: recipe for target 'dynamixel-workbench-msgs/dynamixel_workbench_msgs/CMakeFiles/_dynamixel_workbench_msgs_generate_messages_check_deps_DynamixelLoadInfo.dir/all' failed
+[  0%] Built target _dynamixel_workbench_msgs_generate_messages_check_deps_EX
+Makefile:140: recipe for target 'all' failed

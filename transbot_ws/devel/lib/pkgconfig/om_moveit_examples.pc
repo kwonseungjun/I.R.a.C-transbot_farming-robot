@@ -1,0 +1,8 @@
+prefix=/home/jetson/transbot_ws/devel
+
+Name: om_moveit_examples
+Description: Description of om_moveit_examples
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,411 @@
+file /home/jetson/software/mongo-cxx-driver/SConstruct,line 972:
+	Configure(confdir = .scons/Linux/nohost/sconf_temp)
+scons: Configure: Checking whether the C++ compiler works... 
+.scons/Linux/nohost/sconf_temp/conftest_0.cpp <-
+  |
+  |int main()
+  |{
+  |    return 0;
+  |}
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_0.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_0.cpp
+scons: Configure: yes
+
+scons: Configure: Checking whether the C compiler works... 
+.scons/Linux/nohost/sconf_temp/conftest_1.c <-
+  |
+  |int main()
+  |{
+  |    return 0;
+  |}
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_1.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_1.c
+scons: Configure: yes
+
+
+file /home/jetson/software/mongo-cxx-driver/SConstruct,line 1028:
+	Configure(confdir = .scons/Linux/nohost/sconf_temp)
+scons: Configure: Checking if C++ compiler "g++" is GCC... 
+.scons/Linux/nohost/sconf_temp/conftest_2.cpp <-
+  |
+  |#if !defined(__GNUC__) || defined(__clang__)
+  |#error
+  |#endif
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_2.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_2.cpp
+scons: Configure: yes
+
+scons: Configure: Checking if C compiler "gcc" is GCC... 
+.scons/Linux/nohost/sconf_temp/conftest_3.c <-
+  |
+  |#if !defined(__GNUC__) || defined(__clang__)
+  |#error
+  |#endif
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_3.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_3.c
+scons: Configure: yes
+
+
+file /home/jetson/software/mongo-cxx-driver/SConstruct,line 1157:
+	Configure(confdir = .scons/Linux/nohost/sconf_temp)
+scons: Configure: Checking if C compiler supports -Wno-unused-local-typedefs... 
+.scons/Linux/nohost/sconf_temp/conftest_4.c <-
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_4.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wunused-local-typedefs -Werror -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_4.c
+scons: Configure: yes
+
+
+file /home/jetson/software/mongo-cxx-driver/SConstruct,line 1157:
+	Configure(confdir = .scons/Linux/nohost/sconf_temp)
+scons: Configure: Checking if C compiler supports -Wno-unused-function... 
+.scons/Linux/nohost/sconf_temp/conftest_5.c <-
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_5.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wunused-function -Werror -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_5.c
+scons: Configure: yes
+
+
+file /home/jetson/software/mongo-cxx-driver/SConstruct,line 1157:
+	Configure(confdir = .scons/Linux/nohost/sconf_temp)
+scons: Configure: Checking if C compiler supports -Wno-unused-private-field... 
+.scons/Linux/nohost/sconf_temp/conftest_6.c <-
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_6.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-unused-private-field -Wunused-private-field -Werror -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_6.c
+gcc: error: unrecognized command line option '-Wunused-private-field'; did you mean '-Wunused-parameter'?
+scons: Configure: no
+
+
+file /home/jetson/software/mongo-cxx-driver/SConstruct,line 1157:
+	Configure(confdir = .scons/Linux/nohost/sconf_temp)
+scons: Configure: Checking if C compiler supports -Wno-deprecated-declarations... 
+.scons/Linux/nohost/sconf_temp/conftest_7.c <-
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_7.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wdeprecated-declarations -Werror -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_7.c
+scons: Configure: yes
+
+
+file /home/jetson/software/mongo-cxx-driver/SConstruct,line 1157:
+	Configure(confdir = .scons/Linux/nohost/sconf_temp)
+scons: Configure: Checking if C compiler supports -Wno-tautological-constant-out-of-range-compare... 
+.scons/Linux/nohost/sconf_temp/conftest_8.c <-
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_8.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-tautological-constant-out-of-range-compare -Wtautological-constant-out-of-range-compare -Werror -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_8.c
+gcc: error: unrecognized command line option '-Wtautological-constant-out-of-range-compare'
+scons: Configure: no
+
+
+file /home/jetson/software/mongo-cxx-driver/SConstruct,line 1157:
+	Configure(confdir = .scons/Linux/nohost/sconf_temp)
+scons: Configure: Checking if C compiler supports -Wno-unused-const-variable... 
+.scons/Linux/nohost/sconf_temp/conftest_9.c <-
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_9.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -Wunused-const-variable -Werror -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_9.c
+scons: Configure: yes
+
+
+file /home/jetson/software/mongo-cxx-driver/SConstruct,line 1157:
+	Configure(confdir = .scons/Linux/nohost/sconf_temp)
+scons: Configure: Checking if C compiler supports -fno-builtin-memcmp... 
+.scons/Linux/nohost/sconf_temp/conftest_10.c <-
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_10.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -Werror -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_10.c
+scons: Configure: yes
+
+
+file /home/jetson/software/mongo-cxx-driver/SConstruct,line 1357:
+	Configure(confdir = .scons/Linux/nohost/sconf_temp)
+scons: Configure: Checking for __thread... 
+.scons/Linux/nohost/sconf_temp/conftest_11.cpp <-
+  |
+  |__thread int tsp_int;
+  |int main(int argc, char* argv[]) {
+  |    tsp_int = argc;
+  |    return 0;
+  |}
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_11.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_11.cpp
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_11 -fPIC -pthread -Wl,-z,now -rdynamic .scons/Linux/nohost/sconf_temp/conftest_11.o -Wl,--start-group -Wl,--end-group -lm
+scons: Configure: yes
+
+
+file /home/jetson/software/mongo-cxx-driver/SConstruct,line 1371:
+	Configure(confdir = .scons/Linux/nohost/sconf_temp)
+scons: Configure: Checking for C++ header file boost/filesystem/operations.hpp... 
+.scons/Linux/nohost/sconf_temp/conftest_12.cpp <-
+  |
+  |#include "boost/filesystem/operations.hpp"
+  |
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_12.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_12.cpp
+scons: Configure: yes
+
+scons: Configure: Checking for C++ library boost_thread-mt... 
+.scons/Linux/nohost/sconf_temp/conftest_13.cpp <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_13.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_13.cpp
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_13 -fPIC -pthread -Wl,-z,now -rdynamic .scons/Linux/nohost/sconf_temp/conftest_13.o -Wl,--start-group -Wl,--end-group -lm -lboost_thread-mt
+/usr/bin/ld: cannot find -lboost_thread-mt
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C++ library boost_thread... 
+.scons/Linux/nohost/sconf_temp/conftest_14.cpp <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_14.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_14.cpp
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_14 -fPIC -pthread -Wl,-z,now -rdynamic .scons/Linux/nohost/sconf_temp/conftest_14.o -Wl,--start-group -Wl,--end-group -lm -lboost_thread
+scons: Configure: yes
+
+scons: Configure: Checking for C++ library boost_filesystem-mt... 
+.scons/Linux/nohost/sconf_temp/conftest_15.cpp <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_15.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_15.cpp
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_15 -fPIC -pthread -Wl,-z,now -rdynamic .scons/Linux/nohost/sconf_temp/conftest_15.o -Wl,--start-group -Wl,--end-group -lm -lboost_filesystem-mt
+/usr/bin/ld: cannot find -lboost_filesystem-mt
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C++ library boost_filesystem... 
+.scons/Linux/nohost/sconf_temp/conftest_16.cpp <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_16.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_16.cpp
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_16 -fPIC -pthread -Wl,-z,now -rdynamic .scons/Linux/nohost/sconf_temp/conftest_16.o -Wl,--start-group -Wl,--end-group -lm -lboost_filesystem
+scons: Configure: yes
+
+scons: Configure: Checking for C++ library boost_program_options-mt... 
+.scons/Linux/nohost/sconf_temp/conftest_17.cpp <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_17.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_17.cpp
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_17 -fPIC -pthread -Wl,-z,now -rdynamic .scons/Linux/nohost/sconf_temp/conftest_17.o -Wl,--start-group -Wl,--end-group -lm -lboost_program_options-mt
+/usr/bin/ld: cannot find -lboost_program_options-mt
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C++ library boost_program_options... 
+.scons/Linux/nohost/sconf_temp/conftest_18.cpp <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_18.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_18.cpp
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_18 -fPIC -pthread -Wl,-z,now -rdynamic .scons/Linux/nohost/sconf_temp/conftest_18.o -Wl,--start-group -Wl,--end-group -lm -lboost_program_options
+scons: Configure: yes
+
+scons: Configure: Checking for C++ library boost_system-mt... 
+.scons/Linux/nohost/sconf_temp/conftest_19.cpp <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_19.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_19.cpp
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_19 -fPIC -pthread -Wl,-z,now -rdynamic .scons/Linux/nohost/sconf_temp/conftest_19.o -Wl,--start-group -Wl,--end-group -lm -lboost_system-mt
+/usr/bin/ld: cannot find -lboost_system-mt
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C++ library boost_system... 
+.scons/Linux/nohost/sconf_temp/conftest_20.cpp <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_20.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_20.cpp
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_20 -fPIC -pthread -Wl,-z,now -rdynamic .scons/Linux/nohost/sconf_temp/conftest_20.o -Wl,--start-group -Wl,--end-group -lm -lboost_system
+scons: Configure: yes
+
+scons: Configure: Checking for C header file unistd.h... 
+.scons/Linux/nohost/sconf_temp/conftest_21.c <-
+  |
+  |#include <unistd.h>
+  |
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_21.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_21.c
+scons: Configure: yes
+
+scons: Configure: Checking whether clock_gettime is declared... 
+.scons/Linux/nohost/sconf_temp/conftest_22.c <-
+  |#include <time.h>
+  |int main()
+  |{
+  |#ifndef clock_gettime
+  |    (void) clock_gettime;
+  |#endif
+  |    ;
+  |    return 0;
+  |}
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_22.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -DMONGO_HAVE_HEADER_UNISTD_H -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_22.c
+scons: Configure: yes
+
+scons: Configure: Checking for C library rt... 
+.scons/Linux/nohost/sconf_temp/conftest_23.c <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_23.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -DMONGO_HAVE_HEADER_UNISTD_H -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_23.c
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_23 -fPIC -pthread -Wl,-z,now -rdynamic .scons/Linux/nohost/sconf_temp/conftest_23.o -Wl,--start-group -Wl,--end-group -lm -lrt
+scons: Configure: yes
+
+scons: Configure: Checking for C++ header file execinfo.h... 
+.scons/Linux/nohost/sconf_temp/conftest_24.cpp <-
+  |
+  |#include "execinfo.h"
+  |
+  |
+g++ -o .scons/Linux/nohost/sconf_temp/conftest_24.o -c -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -DMONGO_HAVE_HEADER_UNISTD_H -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_24.cpp
+scons: Configure: yes
+
+scons: Configure: Checking whether backtrace is declared... 
+.scons/Linux/nohost/sconf_temp/conftest_25.c <-
+  |#include <execinfo.h>
+  |int main()
+  |{
+  |#ifndef backtrace
+  |    (void) backtrace;
+  |#endif
+  |    ;
+  |    return 0;
+  |}
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_25.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -DMONGO_HAVE_HEADER_UNISTD_H -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_25.c
+scons: Configure: yes
+
+scons: Configure: Checking whether backtrace_symbols is declared... 
+.scons/Linux/nohost/sconf_temp/conftest_26.c <-
+  |#include <execinfo.h>
+  |int main()
+  |{
+  |#ifndef backtrace_symbols
+  |    (void) backtrace_symbols;
+  |#endif
+  |    ;
+  |    return 0;
+  |}
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_26.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -DMONGO_HAVE_HEADER_UNISTD_H -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_26.c
+scons: Configure: yes
+
+scons: Configure: Checking whether backtrace_symbols_fd is declared... 
+.scons/Linux/nohost/sconf_temp/conftest_27.c <-
+  |#include <execinfo.h>
+  |int main()
+  |{
+  |#ifndef backtrace_symbols_fd
+  |    (void) backtrace_symbols_fd;
+  |#endif
+  |    ;
+  |    return 0;
+  |}
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_27.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -DMONGO_HAVE_HEADER_UNISTD_H -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_27.c
+scons: Configure: yes
+
+scons: Configure: Checking for C library pcap... 
+.scons/Linux/nohost/sconf_temp/conftest_28.c <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_28.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_EXECINFO_BACKTRACE -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_28.c
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_28 -fPIC -pthread -Wl,-z,now -rdynamic .scons/Linux/nohost/sconf_temp/conftest_28.o -Wl,--start-group -Wl,--end-group -lm -lrt -lpcap
+/usr/bin/ld: cannot find -lpcap
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C library wpcap... 
+.scons/Linux/nohost/sconf_temp/conftest_29.c <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_29.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_EXECINFO_BACKTRACE -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_29.c
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_29 -fPIC -pthread -Wl,-z,now -rdynamic .scons/Linux/nohost/sconf_temp/conftest_29.o -Wl,--start-group -Wl,--end-group -lm -lrt -lwpcap
+/usr/bin/ld: cannot find -lwpcap
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking whether timegm is declared... 
+.scons/Linux/nohost/sconf_temp/conftest_30.c <-
+  |#include <time.h>
+  |int main()
+  |{
+  |#ifndef timegm
+  |    (void) timegm;
+  |#endif
+  |    ;
+  |    return 0;
+  |}
+  |
+gcc -o .scons/Linux/nohost/sconf_temp/conftest_30.o -c -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -pipe -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-const-variable -fno-builtin-memcmp -D_SCONS -DMONGO_EXPOSE_MACROS -DSUPPORT_UTF8 -DMONGO_OPTIMIZED_BUILD -D_FILE_OFFSET_BITS=64 -DMONGO_HAVE___THREAD -DBOOST_THREAD_VERSION=2 -DMONGO_HAVE_HEADER_UNISTD_H -DMONGO_HAVE_EXECINFO_BACKTRACE -Ibuild/linux2/use-system-boost/third_party/gtest-1.7.0/include -Ibuild/linux2/use-system-boost/third_party/snappy -Ibuild/linux2/use-system-boost/third_party/libstemmer_c/include -Ibuild/linux2/use-system-boost/third_party/s2 -Ibuild/linux2/use-system-boost/third_party/pcre-8.37 -Ibuild/linux2/use-system-boost -Ibuild/linux2/use-system-boost/mongo .scons/Linux/nohost/sconf_temp/conftest_30.c
+scons: Configure: yes
+
+

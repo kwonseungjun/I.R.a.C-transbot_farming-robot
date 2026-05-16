@@ -1,0 +1,1 @@
+Enhanced manipulator controller - supports PoseStamped/PointStamped, workspace checks, replanning, and install helper.

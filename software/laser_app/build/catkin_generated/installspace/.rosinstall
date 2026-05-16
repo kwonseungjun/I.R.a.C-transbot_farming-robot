@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jetson/software/laser_app/install/setup.sh

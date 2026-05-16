@@ -1,0 +1,16 @@
+<launch>
+    <arg name="camera_type" value="$(env CAMERA_TYPE)" doc="camera_type [astrapro,astraplus]"/>
+    <!-- 驱动模块 || driver module -->
+    <include file="$(find transbot_bringup)/launch/bringup.launch"/>
+    <include file="$(find astra_camera)/launch/astrapro.launch" if="$(eval arg('camera_type') == 'astrapro')"/>
+    <include file="$(find astra_camera)/launch/astraproplus.launch" if="$(eval arg('camera_type') == 'astraplus')"/>
+    <include file="$(find transbot_nav)/launch/library/rplidar.launch"/>
+    <!-- 相机的坐标系 || Camera's coordinate system-->
+    <node pkg="tf" type="static_transform_publisher" name="base_link_to_camera"
+          args="0.08 0 0.10403 -1.57 0 -1.57 /base_link /camera  30"/>
+    <!-- 激光雷达的坐标系 || Lidar coordinate system-->
+    <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser"
+          args="-0.03 0 0.13 3.1416 0 0  /base_link /laser  30"/>
+    <node pkg="tf" type="static_transform_publisher" name="camera_to_camera_link"
+          args="0 0 0 0 0 0 camera camera_link 10"/>
+</launch>
