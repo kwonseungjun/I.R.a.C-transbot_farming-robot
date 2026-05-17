@@ -1,6 +1,6 @@
 #I.R.a.C-transbot_farming-robot
 
-————————————————————————————————————————————————————————————————————————————————————————————————————
+————————————————————————————————————————————————————————————————————————
 
 <img width="3000" height="4000" alt="KakaoTalk_Photo_2026-05-17-14-09-31" src="https://github.com/user-attachments/assets/8f413f46-e42d-4663-b6bf-8959439f9efb" />
 
@@ -8,7 +8,7 @@ This project presents a ROS1-based autonomous mobile robot platform designed for
 The system integrates vision-based perception, autonomous navigation, and mobile robotic operation using the Transbot platform and Jetson Nano embedded system.
 The project was developed during Summer 2025 and later extended toward autonomous mobile manipulation research.
 
-————————————————————————————————————————————————————————————————————————————————————————————————————
+————————————————————————————————————————————————————————————————————————
 
 This project is based on the Transbot platform developed by YAHBOOM Robotics.
 
@@ -75,6 +75,11 @@ A mobile robot platform aimed at autonomous movement and object collection in an
 <Results>
 
 ￼
+
+
+<img width="428" height="360" alt="A13BDDE0-BFFB-4F18-BA0A-009F61DAB3A2_4_5005_c" src="https://github.com/user-attachments/assets/d809582e-fcd3-424b-8d1a-623b668c2ff4" />
+
+
 
 
 <Future Work>
