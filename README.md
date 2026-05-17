@@ -54,7 +54,7 @@ A mobile robot platform aimed at autonomous movement and object collection in an
 - Battery: 12.6V 4400mAH Lithium-ion (Li-ion) battery
 
 
-<Software>
+<'Software'>
 
 - ROS
 
