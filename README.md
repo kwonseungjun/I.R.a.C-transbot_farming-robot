@@ -74,7 +74,7 @@ A mobile robot platform aimed at autonomous movement and object collection in an
 
 <'Result'>
 
-<video width="560" height="315" src="https://www.youtube.com/embed/9wxku7_kEFg?si=53gbguRVxyA-NooZ"></video>
+https://github.com/user-attachments/assets/66c6587d-f871-4ee7-be56-3e2072110220
 
 
 <'Future Work'>
