@@ -21,9 +21,6 @@
 #include <thread>
 #include <chrono>
 
-#include <tf2/LinearMath/Quaternion.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
-
 #include <termios.h>
 #include "std_msgs/String.h" 
 #include "geometry_msgs/Point.h"
@@ -34,7 +31,7 @@
 #include "open_manipulator_msgs/SetJointPosition.h"
 #include "open_manipulator_msgs/SetKinematicsPose.h"
 
-#define NUM_OF_JOINT 5
+#define NUM_OF_JOINT 4
 #define DELTA 0.01
 #define JOINT_DELTA 0.05
 #define PATH_TIME 0.5
@@ -74,10 +71,16 @@ private:
 	*****************************************************************************/
 	ros::Subscriber joint_states_sub_;
 	ros::Subscriber kinematics_pose_sub_;
+	ros::Subscriber t2m_sub_;
+	ros::Subscriber d2m_sub_;
+	ros::Subscriber cls_sub_;
 
 
 	void jointStatesCallback(const sensor_msgs::JointState::ConstPtr& msg);
 	void kinematicsPoseCallback(const open_manipulator_msgs::KinematicsPose::ConstPtr& msg);
+	void t2mCommandCallback(const std_msgs::String::ConstPtr& msg);
+	void d2mCommandCallback(const geometry_msgs::Point::ConstPtr& msg);
+	void clsCommandCallback(const std_msgs::String::ConstPtr& msg);
 
 	/*****************************************************************************
 	** ROS Clients and Callback Functions
@@ -85,19 +88,16 @@ private:
 	ros::ServiceClient goal_joint_space_path_client_;
 	ros::ServiceClient goal_joint_space_path_from_present_client_;
 	ros::ServiceClient goal_task_space_path_from_present_position_only_client_;
-		ros::ServiceClient goal_task_space_path_from_present_client_;
 	ros::ServiceClient goal_tool_control_client_;
 
-	
 	ros::Publisher m2t_pub_;
     ros::Publisher m2d_pub_;
 
 	bool setJointSpacePath(std::vector<std::string> joint_name, std::vector<double> joint_angle, double path_time);
 	bool setJointSpacePathFromPresent(std::vector<std::string> joint_name, std::vector<double> joint_angle, double path_time);
 	bool setTaskSpacePathFromPresentPositionOnly(std::vector<double> kinematics_pose, double path_time);
-	bool setTaskSpacePathFromPresent(std::vector<double> pose, double path_time);
 	bool setToolControl(std::vector<double> joint_angle);
-	bool setTaskSpacePath(std::vector<double> kinematics_pose, std::vector<double> rpy, double path_time);
+
 	/*****************************************************************************
 	** Others
 	*****************************************************************************/
@@ -109,4 +109,3 @@ private:
 };
 
 #endif //OPEN_MANIPULATOR_TELEOP_KEYBOARD_H_
-
