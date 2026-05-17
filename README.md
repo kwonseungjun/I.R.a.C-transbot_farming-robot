@@ -21,12 +21,12 @@ The entire system was operated on a Jetson Nano Developer Kit.
 The research results were published in a conference paper in 2025.
 
 
-<Overview>
+<'Overview'>
 
 A mobile robot platform aimed at autonomous movement and object collection in an agricultural environment
 
 
-<Features>
+<'Features'>
 
 - caterpillar drive mobile platform
 
@@ -39,7 +39,7 @@ A mobile robot platform aimed at autonomous movement and object collection in an
 - Remote control mode
 
 
-<Hardware>
+<'Hardware'>
 
 - MCU: Jetson nano dev kit 4GB RAM
 
@@ -67,21 +67,20 @@ A mobile robot platform aimed at autonomous movement and object collection in an
 - TensorRT
 
 
-<System Architecture>
+<'System Architecture'>
 
 ￼<img width="598" height="461" alt="image" src="https://github.com/user-attachments/assets/0e8751b7-ecc4-4a4c-a002-c0f48efc0286" />
 
 
-<Results>
+<'Result'>
 
 ￼
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9wxku7_kEFg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9wxku7_kEFg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
-<Future Work>
+
+<'Future Work'>
 
 - Vision-based autonomous navigation in outdoor agricultural environments
 
@@ -98,7 +97,7 @@ A mobile robot platform aimed at autonomous movement and object collection in an
 - Development of an integrated mobile manipulation platform for autonomous field operations
 
 
-<Research Challenges>
+<'Research Challenges'>
 
 - Outdoor navigation under uneven terrain conditions
 
