@@ -58,6 +58,7 @@ void OpenManipulatorTeleop::initSubscriber()
 
     t2m_sub_ = node_handle_.subscribe("t2m", 10, &OpenManipulatorTeleop::t2mCommandCallback, this);
     d2m_sub_ = node_handle_.subscribe("/depth_3d_points", 10, &OpenManipulatorTeleop::d2mCommandCallback, this);
+    cls_sub_ = node_handle_.subscribe("/detected_class", 10, &OpenManipulatorTeleop::clsCommandCallback, this);
 
 }
 // 새로운 퍼블리셔 초기화 함수 구현
@@ -68,7 +69,15 @@ void OpenManipulatorTeleop::initPublisher()
 
     ROS_INFO("Publishers initialized for /m2d and /m2t.");
 }
-
+void OpenManipulatorTeleop::clsCommandCallback(const std_msgs::String::ConstPtr& msg)
+{
+    if (msg->data == "ripe")
+        detect_class = "ripe";
+    else if (msg->data == "rotten")
+        detect_class = "rotten";
+    else
+        detect_class = "unknown";
+}
 // [추가] 외부 토픽을 수신했을 때 호출될 콜백 함수입니다.
 void OpenManipulatorTeleop::t2mCommandCallback(const std_msgs::String::ConstPtr& msg)
 {
@@ -245,31 +254,33 @@ void OpenManipulatorTeleop::d2mCommandCallback(const geometry_msgs::Point::Const
     setTaskSpacePathFromPresentPositionOnly(goalPose, path_time);
     ros::Duration(1.0).sleep();
 
-
-    setGoal('3');
-    ros::Duration(4.0).sleep();
-
-
-    path_time = 1.0;
-    goalPose.at(0) = 0;
-    goalPose.at(1) = 0;
-    goalPose.at(2) = -0.05;
+    if(detect_class == 0)
+    {
+		setGoal('3');
+		ros::Duration(4.0).sleep();
+	}
+	else
+	{
+	    setGoal('4');
+	    ros::Duration(4.0).sleep();
+	}	
+		
+	path_time = 1.0;
+	goalPose.at(0) = 0;
+	goalPose.at(1) = 0;
+	goalPose.at(2) = -0.05;
     setTaskSpacePathFromPresentPositionOnly(goalPose, path_time);
-    ros::Duration(1.0).sleep();
-
-
-    setGoal('g');
-    ros::Duration(1.0).sleep();
-
-    goalPose.at(2) = 0.05;
-    setTaskSpacePathFromPresentPositionOnly(goalPose, path_time);
-    ros::Duration(1.0).sleep();
-
-
-    setGoal('2');
-    ros::Duration(2.0).sleep();
-
-
+	ros::Duration(1.0).sleep();
+		
+		
+	setGoal('g');
+	ros::Duration(1.0).sleep();
+		
+	goalPose.at(2) = 0.05;
+	setTaskSpacePathFromPresentPositionOnly(goalPose, path_time);
+	ros::Duration(1.0).sleep();
+	
+		
     pub_msg.data = "start";
     m2d_pub_.publish(pub_msg);
 }
@@ -303,9 +314,9 @@ void OpenManipulatorTeleop::setGoal(char ch)
         double path_time = 2.0;
 
         joint_name.push_back("joint1"); joint_angle.push_back(0.0);
-        joint_name.push_back("joint2"); joint_angle.push_back(0.0);
-        joint_name.push_back("joint3"); joint_angle.push_back(0.0);
-        joint_name.push_back("joint4"); joint_angle.push_back(0.0);
+        joint_name.push_back("joint2"); joint_angle.push_back(-0.684);
+        joint_name.push_back("joint3"); joint_angle.push_back(0.658);
+        joint_name.push_back("joint4"); joint_angle.push_back(-0.091);
         setJointSpacePath(joint_name, joint_angle, path_time);
     }
     else if (ch == '1')    //주행모드
@@ -328,6 +339,19 @@ void OpenManipulatorTeleop::setGoal(char ch)
         std::vector<std::string> joint_name;
         std::vector<double> joint_angle;
         double path_time = 4.0;
+        joint_name.push_back("joint1"); joint_angle.push_back(-1.569);
+        joint_name.push_back("joint2"); joint_angle.push_back(0.006);
+        joint_name.push_back("joint3"); joint_angle.push_back(0.416);
+        joint_name.push_back("joint4"); joint_angle.push_back(1.023);
+        setJointSpacePath(joint_name, joint_angle, path_time);
+    }
+    else if (ch == '4')    //처모드
+    {
+        printf("input : 1 \tinit pose\n");
+
+        std::vector<std::string> joint_name;
+        std::vector<double> joint_angle;
+        double path_time = 4.0;
         joint_name.push_back("joint1"); joint_angle.push_back(1.569);
         joint_name.push_back("joint2"); joint_angle.push_back(0.006);
         joint_name.push_back("joint3"); joint_angle.push_back(0.416);
@@ -341,22 +365,15 @@ void OpenManipulatorTeleop::restoreTerminalSettings(void)
     tcsetattr(0, TCSANOW, &oldt_);  /* Apply saved settings */
 }
 
-
 int main(int argc, char** argv)
 {
     // Init ROS node
     ros::init(argc, argv, "open_manipulator_teleop_keyboard");
     OpenManipulatorTeleop openManipulatorTeleop;
 
-    char ch;
-
-    openManipulatorTeleop.printText();
-    while (ros::ok() && (ch = std::getchar()) != 'q')
+    while (ros::ok())
     {
-        ros::spinOnce();    //콜백 확인
-        openManipulatorTeleop.printText();
         ros::spinOnce();
-        openManipulatorTeleop.setGoal(ch);
     }
 
     return 0;
