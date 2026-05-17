@@ -2,7 +2,9 @@
 
 ————————————————————————————————————————————————————————————————————————
 
-<img width="3000" height="4000" src="https://youtu.be/9wxku7_kEFg?si=DiEO0I_v93-Pzh0h" />
+<img width="3000" height="3284" alt="KakaoTalk_Photo_2026-05-17-14-09-31" src="https://github.com/user-attachments/assets/c854b589-7e46-410d-aa98-631e55bb1d79" />
+
+
 
 This project presents a ROS1-based autonomous mobile robot platform designed for agricultural environments.
 The system integrates vision-based perception, autonomous navigation, and mobile robotic operation using the Transbot platform and Jetson Nano embedded system.
