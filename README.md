@@ -76,8 +76,7 @@ A mobile robot platform aimed at autonomous movement and object collection in an
 
 ￼
 
-
-<img width="428" height="360" alt="A13BDDE0-BFFB-4F18-BA0A-009F61DAB3A2_4_5005_c" src="https://github.com/user-attachments/assets/d809582e-fcd3-424b-8d1a-623b668c2ff4" />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9wxku7_kEFg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
 
 
 
